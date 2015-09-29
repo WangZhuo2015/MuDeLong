@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IZ1-2r-PGK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--ShowCars-->
+        <scene sceneID="sPZ-K1-LuH">
+            <objects>
+                <viewController title="ShowCars" id="fei-O5-ZCP" customClass="ShowCarsViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tdq-Pz-sDu"/>
+                        <viewControllerLayoutGuide type="bottom" id="TtK-7g-6SH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ged-OE-kHD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王卓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5w-la-hNd">
+                                <rect key="frame" x="283" y="289" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V5w-la-hNd" firstAttribute="centerY" secondItem="ged-OE-kHD" secondAttribute="centerY" id="X3z-Bz-MSO"/>
+                            <constraint firstItem="V5w-la-hNd" firstAttribute="centerX" secondItem="ged-OE-kHD" secondAttribute="centerX" id="tI4-Pn-BbD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="汽车展示" id="x9x-et-BTF"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2AG-hf-KBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-1712"/>
+        </scene>
+        <!--ShowCars-->
+        <scene sceneID="Bq1-FL-F7Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZ1-2r-PGK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ShowCars" id="qtM-Bw-456" userLabel="ShowCars"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wWF-h4-ccy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fei-O5-ZCP" kind="relationship" relationship="rootViewController" id="QI4-h4-JhK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDJ-sH-nqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="-1712"/>
+        </scene>
+    </scenes>
+</document>

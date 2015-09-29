@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="owL-7L-frF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--News-->
+        <scene sceneID="DAA-21-2AG">
+            <objects>
+                <viewController title="News" id="hzE-aT-qxe" customClass="NewsViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bV0-5g-Ato"/>
+                        <viewControllerLayoutGuide type="bottom" id="gSF-94-VvB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o55-B9-BSN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="新闻活动" id="LO8-2Z-uNu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2DN-ZF-oLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-1059"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="VaN-M0-hoc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owL-7L-frF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" id="rsL-0Z-iNP" userLabel="News"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gaU-42-vEa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hzE-aT-qxe" kind="relationship" relationship="rootViewController" id="cik-lt-O4w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pe-ax-B1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="-1059"/>
+        </scene>
+    </scenes>
+</document>
