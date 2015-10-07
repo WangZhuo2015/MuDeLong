@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class CarSimpleInfo{
+struct CarSimpleInfo{
     var carImageURL:NSURL
     var carName:String
     
@@ -15,4 +15,5 @@ class CarSimpleInfo{
         carImageURL = NSURL(fileURLWithPath: Img)
         self.carName = carName
     }
+    
 }

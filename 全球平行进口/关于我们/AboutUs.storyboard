@@ -15,7 +15,19 @@
                     <view key="view" contentMode="scaleToFill" id="fyO-Ej-Ryu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AboutUs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKu-yK-6gu">
+                                <rect key="frame" x="267" y="289" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OKu-yK-6gu" firstAttribute="centerY" secondItem="fyO-Ej-Ryu" secondAttribute="centerY" id="B1X-EI-KF9"/>
+                            <constraint firstItem="OKu-yK-6gu" firstAttribute="centerX" secondItem="fyO-Ej-Ryu" secondAttribute="centerX" id="Tjv-KW-MPf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="关于我们" id="lv5-EX-Xdw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
