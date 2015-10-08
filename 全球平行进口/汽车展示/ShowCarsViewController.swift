@@ -21,8 +21,11 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
     @IBOutlet weak var searchBar: UISearchBar!
     var carInfoArray = [CarSimpleInfo]()
     var brandInfoArray = [CarSimpleInfo]()
-    
-    
+    var brandSectionArray:[String]{
+        get{
+            return searchForSection(brandInfoArray)
+        }
+    }// = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,44 +55,85 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    /**
+    根据UITableView Data数组寻找索引并添加进索引数组
+    
+    - parameter DataArray: UITableView数据数组
+    
+    - returns: 索引数组
+    */
+    func searchForSection(DataArray:[CarSimpleInfo])->[String]{
+        var stringDataArray = [String]()
+//=================================================
+///奇怪的错误
+//        for item in DataArray{
+//            print(item)
+//            stringDataArray.append(item.carName)
+//        }
+//=================================================
+        for var i=0;i<DataArray.count;++i{
+            stringDataArray.append(DataArray[i].carName)
+        }
+        var array=[String]()
+        for str in stringDataArray{
+            //查重,避免添加错误的索引
+            var flag = false
+            for existSection in array{
+                if String(str[str.startIndex]) == existSection {
+                    flag = true
+                }
+            }
+            if flag == false{
+                array.append(String(str[str.startIndex]))
+            }
+        }
+        return array
+    }
+    
+    /**
+    根据UISegmentedControl不同的值显示不同的页面
+    
+    - parameter sender: UISegmentedControl的实例
+    */
     func hideView(sender:UISegmentedControl){
         switch sender.selectedSegmentIndex{
         case 0: brandTableView.hidden = true
         carsCollectionView.hidden = false
-        searchBar.placeholder = "按车名搜索..."
+        searchBar.placeholder = "搜索..."
             break
         case 1: carsCollectionView.hidden = true
                 brandTableView.hidden = false
-                searchBar.placeholder = "搜索..."
+                searchBar.placeholder = "按车名搜索..."
             break
         default:break
         }
         //收起键盘
         searchBar.resignFirstResponder()
     }
+    
     //tableView刷新方法
     func tableViewRefreshHeader(){
-        let testBrand = CarSimpleInfo(Img: "", carName: "")
+        let testBrand = CarSimpleInfo(Img: "", carName: "我好帅")
         brandInfoArray.append(testBrand)
         self.brandTableView.reloadData()
         self.brandTableView.header.endRefreshing()
     }
     func tableViewRefreshFooter(){
-        let testBrand = CarSimpleInfo(Img: "", carName: "")
+        let testBrand = CarSimpleInfo(Img: "", carName: "我好帅")
         brandInfoArray.append(testBrand)
         self.brandTableView.reloadData()
         self.brandTableView.footer.endRefreshing()
     }
     //collectionView刷新方法
     func collectionViewRefreshHeader(){
-        let testBrand = CarSimpleInfo(Img: "", carName: "")
+        let testBrand = CarSimpleInfo(Img: "", carName: "我好帅")
         carInfoArray.append(testBrand)
         carInfoArray.append(testBrand)
         self.carsCollectionView.reloadData()
         self.carsCollectionView.header.endRefreshing()
     }
     func collectionViewRefreshFooter(){
-        let testBrand = CarSimpleInfo(Img: "", carName: "")
+        let testBrand = CarSimpleInfo(Img: "", carName: "我好帅")
         carInfoArray.append(testBrand)
         carInfoArray.append(testBrand)
         self.carsCollectionView.reloadData()
@@ -97,10 +141,17 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     // MARK: - Table view data source
-    
+    //索引数量
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return brandSectionArray.count
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return brandSectionArray[section]
+    }
+    func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+        return brandSectionArray
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -112,14 +163,11 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let tableViewCell = brandTableView.dequeueReusableCellWithIdentifier(tableViewCellReuseIdentifier) as! brandSimpleInfoTableViewCell
         tableViewCell.brandImage.image = UIImage(named: "test.jpg")
-        tableViewCell.brandLabel.text = "233333"
+        tableViewCell.brandLabel.text = brandInfoArray[indexPath.row].carName
         return tableViewCell
     }
     
-    
-    
-    
-    
+
     
     // MARK: - Collection view data source
     
@@ -133,7 +181,7 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
         return 2
     }
 
-    
+    //collectionView的Sections数量
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         if carInfoArray.count%2==0{
             return carInfoArray.count/2
@@ -142,10 +190,8 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
             return (carInfoArray.count/2)+1
         }
     }
+    //调整collectionViewCell大小
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize{
-        
         return CGSizeMake(150, 150)
     }
-    
-
 }

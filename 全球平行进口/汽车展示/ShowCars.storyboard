@@ -285,7 +285,7 @@
                                 <rect key="frame" x="0.0" y="39" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="TBO-e6-SDp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="carOfBrandTableViewCellReuseIdentifier" rowHeight="100" id="TBO-e6-SDp" customClass="carOfBrandTableViewCell" customModule="全球平行进口" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="240" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TBO-e6-SDp" id="IEN-oK-CQ6">
@@ -317,7 +317,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="wEk-Hr-Ni1"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -333,7 +333,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最低售价:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipc-Fw-vdO">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gv-TK-4LW">
@@ -342,7 +342,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="VS2-xs-d8a"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -360,11 +360,9 @@
                                                 <constraint firstItem="LXY-Iw-4X0" firstAttribute="top" secondItem="IEN-oK-CQ6" secondAttribute="topMargin" constant="2" id="BqU-CM-T9F"/>
                                                 <constraint firstItem="azx-yz-3Nq" firstAttribute="centerY" secondItem="IEN-oK-CQ6" secondAttribute="centerY" id="HqR-Z7-5W8"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="LXY-Iw-4X0" secondAttribute="trailing" id="QDJ-rr-WZU"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="azx-yz-3Nq" secondAttribute="leading" id="T4F-k8-SZ6"/>
                                                 <constraint firstItem="LXY-Iw-4X0" firstAttribute="leading" secondItem="azx-yz-3Nq" secondAttribute="trailing" constant="8" id="XO1-or-sXd"/>
                                                 <constraint firstItem="7Gv-TK-4LW" firstAttribute="leading" secondItem="Ipc-Fw-vdO" secondAttribute="trailing" constant="8" id="ags-Pl-bVt"/>
-                                                <constraint firstItem="azx-yz-3Nq" firstAttribute="centerX" secondItem="IEN-oK-CQ6" secondAttribute="centerX" id="fFX-6w-gyX">
-                                                    <variation key="widthClass=compact" constant="-129.5"/>
-                                                </constraint>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7Gv-TK-4LW" secondAttribute="trailing" id="mph-XY-qus"/>
                                                 <constraint firstItem="Ipc-Fw-vdO" firstAttribute="top" secondItem="LXY-Iw-4X0" secondAttribute="bottom" constant="38" id="nqq-li-xBd"/>
                                                 <constraint firstItem="Ipc-Fw-vdO" firstAttribute="leading" secondItem="azx-yz-3Nq" secondAttribute="trailing" constant="8" id="qNH-Br-OX4"/>
@@ -378,16 +376,16 @@
                                                     <exclude reference="7Gv-TK-4LW"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="ags-Pl-bVt"/>
-                                                    <exclude reference="mph-XY-qus"/>
-                                                    <exclude reference="rcD-pg-kD2"/>
-                                                    <exclude reference="nqq-li-xBd"/>
-                                                    <exclude reference="qNH-Br-OX4"/>
+                                                    <exclude reference="HqR-Z7-5W8"/>
+                                                    <exclude reference="T4F-k8-SZ6"/>
                                                     <exclude reference="BqU-CM-T9F"/>
                                                     <exclude reference="QDJ-rr-WZU"/>
                                                     <exclude reference="XO1-or-sXd"/>
-                                                    <exclude reference="HqR-Z7-5W8"/>
-                                                    <exclude reference="fFX-6w-gyX"/>
+                                                    <exclude reference="nqq-li-xBd"/>
+                                                    <exclude reference="qNH-Br-OX4"/>
+                                                    <exclude reference="ags-Pl-bVt"/>
+                                                    <exclude reference="mph-XY-qus"/>
+                                                    <exclude reference="rcD-pg-kD2"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -398,21 +396,31 @@
                                                     <include reference="7Gv-TK-4LW"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="ags-Pl-bVt"/>
-                                                    <include reference="mph-XY-qus"/>
-                                                    <include reference="rcD-pg-kD2"/>
-                                                    <include reference="nqq-li-xBd"/>
-                                                    <include reference="qNH-Br-OX4"/>
+                                                    <include reference="HqR-Z7-5W8"/>
+                                                    <include reference="T4F-k8-SZ6"/>
                                                     <include reference="BqU-CM-T9F"/>
                                                     <include reference="QDJ-rr-WZU"/>
                                                     <include reference="XO1-or-sXd"/>
-                                                    <include reference="HqR-Z7-5W8"/>
-                                                    <include reference="fFX-6w-gyX"/>
+                                                    <include reference="nqq-li-xBd"/>
+                                                    <include reference="qNH-Br-OX4"/>
+                                                    <include reference="ags-Pl-bVt"/>
+                                                    <include reference="mph-XY-qus"/>
+                                                    <include reference="rcD-pg-kD2"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="carImage" destination="azx-yz-3Nq" id="wkL-5p-MSv"/>
+                                            <outlet property="carName" destination="LXY-Iw-4X0" id="bLa-iG-Uxq"/>
+                                            <outlet property="carPrice" destination="7Gv-TK-4LW" id="Yrx-Tx-4nn"/>
+                                            <segue destination="Xg2-2x-U62" kind="show" id="XpM-9J-3aJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="P2n-Ys-K8U" id="cWD-cf-0bg"/>
+                                    <outlet property="delegate" destination="P2n-Ys-K8U" id="l3a-LL-eb2"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -443,10 +451,32 @@
                     <navigationItem key="navigationItem" title="汽车列表" id="w6a-5f-gU8"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="carOfBrandTableView" destination="EOP-HO-cUL" id="weB-uj-7aj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1C-cF-nT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1986.75" y="-1322.5"/>
+        </scene>
+        <!--预约试驾-->
+        <scene sceneID="Ubt-ag-ark">
+            <objects>
+                <viewController title="预约试驾" id="ZiR-Sf-TOh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pE3-ll-OWA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Juv-HE-LvT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j1B-Oy-h1v">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="预约试驾" id="vHk-nd-5OO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAD-O9-ytt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441.75" y="-2099.5"/>
         </scene>
         <!--车型列表-->
         <scene sceneID="rNx-oh-Dxe">
@@ -460,26 +490,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgZ-4w-tVI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHV-lR-V0F">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <connections>
-                                    <segue destination="YHC-ns-BdW" kind="embed" id="MuO-QE-VZA"/>
+                                    <segue destination="YHC-ns-BdW" kind="embed" id="x5j-vE-agy"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CgZ-4w-tVI" firstAttribute="centerY" secondItem="nZq-8f-IaN" secondAttribute="centerY" id="K70-ag-Dqc"/>
-                            <constraint firstItem="CgZ-4w-tVI" firstAttribute="width" secondItem="nZq-8f-IaN" secondAttribute="width" id="Rq1-Xj-PGY"/>
-                            <constraint firstItem="CgZ-4w-tVI" firstAttribute="centerX" secondItem="nZq-8f-IaN" secondAttribute="centerX" id="Ul3-bR-bqn"/>
-                            <constraint firstItem="CgZ-4w-tVI" firstAttribute="height" secondItem="nZq-8f-IaN" secondAttribute="height" id="X4u-sg-25h"/>
+                            <constraint firstItem="fHV-lR-V0F" firstAttribute="centerY" secondItem="nZq-8f-IaN" secondAttribute="centerY" id="Gjj-KE-XJ3">
+                                <variation key="widthClass=compact" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="fHV-lR-V0F" firstAttribute="width" secondItem="nZq-8f-IaN" secondAttribute="width" id="PCI-F8-R2T"/>
+                            <constraint firstItem="fHV-lR-V0F" firstAttribute="centerX" secondItem="nZq-8f-IaN" secondAttribute="centerX" id="QPm-7E-IzO"/>
+                            <constraint firstItem="fHV-lR-V0F" firstAttribute="height" secondItem="nZq-8f-IaN" secondAttribute="height" id="bzv-Wk-aMd">
+                                <variation key="widthClass=compact" constant="-64"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fHV-lR-V0F"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Gjj-KE-XJ3"/>
+                                <exclude reference="PCI-F8-R2T"/>
+                                <exclude reference="QPm-7E-IzO"/>
+                                <exclude reference="bzv-Wk-aMd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fHV-lR-V0F"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Gjj-KE-XJ3"/>
+                                <include reference="PCI-F8-R2T"/>
+                                <include reference="QPm-7E-IzO"/>
+                                <include reference="bzv-Wk-aMd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="车型列表" id="mHk-td-Hrk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6T-wf-vWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="-2099"/>
+            <point key="canvasLocation" x="1986.75" y="-2099.5"/>
         </scene>
         <!--Car Detail Table View Controller-->
         <scene sceneID="JG4-0e-6ou">
@@ -490,7 +546,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="" id="fHp-tZ-t1J">
+                            <tableViewSection id="fJu-gA-uMx">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="UVQ-gC-RHV">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
@@ -615,6 +671,9 @@
                                                         <constraint firstAttribute="width" constant="90" id="nou-ny-Afl"/>
                                                     </constraints>
                                                     <state key="normal" title="在线预约试驾"/>
+                                                    <connections>
+                                                        <segue destination="ZiR-Sf-TOh" kind="show" id="D0D-1a-CcT"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR7-iF-Ktl">
                                                     <rect key="frame" x="88" y="38" width="279" height="21"/>
@@ -681,7 +740,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aux-UM-fm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2699.25" y="-2099.5"/>
+            <point key="canvasLocation" x="2649.75" y="-2099.5"/>
         </scene>
         <!--ShowCars-->
         <scene sceneID="Bq1-FL-F7Y">
@@ -706,4 +765,7 @@
     <resources>
         <image name="test.jpg" width="200" height="200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XpM-9J-3aJ"/>
+    </inferredMetricsTieBreakers>
 </document>

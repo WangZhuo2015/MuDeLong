@@ -8,8 +8,10 @@
 
 import UIKit
 
-class carsOfBrandViewController: UIViewController {
-
+class carsOfBrandViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    let carOfBrandTableViewCellReuseIdentifier = "carOfBrandTableViewCellReuseIdentifier"
+    
+    @IBOutlet weak var carOfBrandTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,25 @@ class carsOfBrandViewController: UIViewController {
     }
     
 
+    
+    
+    // MARK - :TableView DataSource Method
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = carOfBrandTableView.dequeueReusableCellWithIdentifier(carOfBrandTableViewCellReuseIdentifier) as! carOfBrandTableViewCell
+        cell.carImage.image = UIImage(named:"test.jpg")
+        cell.carPrice.text = "66万"
+        cell.carName.text = "奥迪Q7"
+        return cell
+    }
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

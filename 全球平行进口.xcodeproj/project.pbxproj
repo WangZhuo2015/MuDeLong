@@ -11,6 +11,7 @@
 		CB74F0F81BBACB9600D84E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0F61BBACB9600D84E1D /* Main.storyboard */; };
 		CB74F0FD1BBACB9600D84E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0FB1BBACB9600D84E1D /* LaunchScreen.storyboard */; };
 		CB75E77C1BC4C4340072EE9F /* carsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB75E77B1BC4C4340072EE9F /* carsCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB28A991BC6A70400FF9D42 /* carOfBrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB28A981BC6A70400FF9D42 /* carOfBrandTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		CBBA9EC81BC518BC00C46105 /* carsOfBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA9EC71BC518BC00C46105 /* carsOfBrandViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDEED0C1BBAE7DB00F07FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED081BBAE7DB00F07FA9 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDEED0D1BBAE7DB00F07FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDEED091BBAE7DB00F07FA9 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
@@ -58,6 +59,7 @@
 		CB74F0F71BBACB9600D84E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB74F0FC1BBACB9600D84E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB75E77B1BC4C4340072EE9F /* carsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBB28A981BC6A70400FF9D42 /* carOfBrandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carOfBrandTableViewCell.swift; sourceTree = "<group>"; };
 		CBBA9EC71BC518BC00C46105 /* carsOfBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carsOfBrandViewController.swift; sourceTree = "<group>"; };
 		CBDEED081BBAE7DB00F07FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBDEED091BBAE7DB00F07FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -241,8 +243,9 @@
 				CBDEED2A1BBAED5000F07FA9 /* ShowCarsViewController.swift */,
 				CBE1E33F1BC423AF0098E9EF /* brandSimpleInfoTableViewCell.swift */,
 				CB75E77B1BC4C4340072EE9F /* carsCollectionViewCell.swift */,
-				CBBA9EC71BC518BC00C46105 /* carsOfBrandViewController.swift */,
 				CB2E84BF1BC52D23005ACED0 /* carDetailTableViewController.swift */,
+				CBBA9EC71BC518BC00C46105 /* carsOfBrandViewController.swift */,
+				CBB28A981BC6A70400FF9D42 /* carOfBrandTableViewCell.swift */,
 				CBE1E3471BC4371A0098E9EF /* test.jpg */,
 			);
 			name = Contoller;
@@ -467,6 +470,7 @@
 				CBE1E3211BC41D5B0098E9EF /* MJRefreshBackFooter.m in Sources */,
 				CBDEED2D1BBAED5E00F07FA9 /* NewsViewController.swift in Sources */,
 				CBE1E3401BC423AF0098E9EF /* brandSimpleInfoTableViewCell.swift in Sources */,
+				CBB28A991BC6A70400FF9D42 /* carOfBrandTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
