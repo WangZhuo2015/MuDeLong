@@ -1,5 +1,5 @@
 //
-//  brandSimpleInfoTableViewCell.swift
+//  BrandSimpleInfoTableViewCell.swift
 //  全球平行进口
 //
 //  Created by 王卓 on 15/10/6.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class brandSimpleInfoTableViewCell: UITableViewCell {
+class BrandSimpleInfoTableViewCell: UITableViewCell {
     @IBOutlet weak var brandImage: UIImageView!
     @IBOutlet weak var brandLabel: UILabel!
 

@@ -1,5 +1,5 @@
 //
-//  testDriveViewController.swift
+//  TestDriveViewController.swift
 //  全球平行进口
 //
 //  Created by 王卓 on 15/10/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class testDriveViewController: UIViewController {
+class TestDriveViewController: UIViewController {
 
     @IBOutlet weak var date: UITextField!
     @IBOutlet weak var name: UITextField!

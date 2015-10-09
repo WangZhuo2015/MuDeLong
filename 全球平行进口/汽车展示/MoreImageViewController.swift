@@ -1,5 +1,5 @@
 //
-//  moreImageViewController.swift
+//  MoreImageViewController.swift
 //  全球平行进口
 //
 //  Created by 王卓 on 15/10/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class moreImageViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class MoreImageViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     var carImageArray=[UIImage]()
     
     @IBOutlet weak var moreImageCollectionView: UICollectionView!
@@ -31,7 +31,7 @@ class moreImageViewController: UIViewController,UICollectionViewDelegate,UIColle
     // MARK: - Collection view data source
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let moreImagecollectionViewCell = moreImageCollectionView.dequeueReusableCellWithReuseIdentifier(moreImagecollectionViewCellReuseIdentifier,forIndexPath:indexPath ) as! moreImageCollectionViewCell
+        let moreImagecollectionViewCell = moreImageCollectionView.dequeueReusableCellWithReuseIdentifier(moreImagecollectionViewCellReuseIdentifier,forIndexPath:indexPath ) as! MoreImageCollectionViewCell
         
         moreImagecollectionViewCell.layoutIfNeeded()
         moreImagecollectionViewCell.carImage.image = UIImage(named: "test.jpg")

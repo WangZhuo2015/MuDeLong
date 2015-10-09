@@ -1,18 +1,18 @@
 //
-//  carParameterTableViewController.swift
+//  CarDetailTableViewController.swift
 //  全球平行进口
 //
-//  Created by 王卓 on 15/10/9.
+//  Created by 王卓 on 15/10/7.
 //  Copyright © 2015年 538_iOS_Team. All rights reserved.
 //
 
 import UIKit
 
-class carParameterTableViewController: UITableViewController {
+class CarDetailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.tableView.backgroundColor=UIColor.blueColor()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -20,22 +20,9 @@ class carParameterTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 1
-//    }
-//
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 5
-//    }
+
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

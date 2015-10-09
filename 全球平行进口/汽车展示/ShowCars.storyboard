@@ -40,7 +40,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="carsCollectionViewCellReuseIdentifier" id="aGI-2m-OC4" customClass="carsCollectionViewCell" customModule="全球平行进口" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="carsCollectionViewCellReuseIdentifier" id="aGI-2m-OC4" customClass="CarsCollectionViewCell" customModule="全球平行进口" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -142,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="136" width="375" height="482"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="brandTableViewCellReuseIdentifier" rowHeight="100" id="PQp-Ig-TLP" customClass="brandSimpleInfoTableViewCell" customModule="全球平行进口" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="brandTableViewCellReuseIdentifier" rowHeight="100" id="PQp-Ig-TLP" customClass="BrandSimpleInfoTableViewCell" customModule="全球平行进口" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PQp-Ig-TLP" id="PKM-hG-Ldp">
@@ -272,7 +272,7 @@
         <!--汽车列表-->
         <scene sceneID="xrP-ip-99X">
             <objects>
-                <viewController id="P2n-Ys-K8U" customClass="carsOfBrandViewController" customModule="全球平行进口" sceneMemberID="viewController">
+                <viewController id="P2n-Ys-K8U" customClass="CarsOfBrandViewController" customModule="全球平行进口" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bCb-f0-QXA"/>
                         <viewControllerLayoutGuide type="bottom" id="Zj5-vs-6XG"/>
@@ -285,7 +285,7 @@
                                 <rect key="frame" x="0.0" y="39" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="carOfBrandTableViewCellReuseIdentifier" rowHeight="100" id="TBO-e6-SDp" customClass="carOfBrandTableViewCell" customModule="全球平行进口" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="carOfBrandTableViewCellReuseIdentifier" rowHeight="100" id="TBO-e6-SDp" customClass="CarOfBrandTableViewCell" customModule="全球平行进口" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="240" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TBO-e6-SDp" id="IEN-oK-CQ6">
@@ -461,7 +461,7 @@
         <!--更多图片-->
         <scene sceneID="Ker-NT-vHH">
             <objects>
-                <viewController id="Ylk-vG-551" customClass="moreImageViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ylk-vG-551" customClass="MoreImageViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t3J-vI-nkZ"/>
                         <viewControllerLayoutGuide type="bottom" id="89x-w1-IU4"/>
@@ -479,7 +479,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="moreImagecollectionViewCellReuseIdentifier" id="Itw-WD-PB4" customClass="moreImageCollectionViewCell" customModule="全球平行进口" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="moreImagecollectionViewCellReuseIdentifier" id="Itw-WD-PB4" customClass="MoreImageCollectionViewCell" customModule="全球平行进口" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -680,7 +680,7 @@
         <!--预约试驾-->
         <scene sceneID="Ubt-ag-ark">
             <objects>
-                <viewController title="预约试驾" id="ZiR-Sf-TOh" customClass="testDriveViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="预约试驾" id="ZiR-Sf-TOh" customClass="TestDriveViewController" customModule="全球平行进口" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pE3-ll-OWA"/>
                         <viewControllerLayoutGuide type="bottom" id="Juv-HE-LvT"/>
@@ -960,7 +960,7 @@
         <!--Car Detail Table View Controller-->
         <scene sceneID="JG4-0e-6ou">
             <objects>
-                <tableViewController id="YHC-ns-BdW" customClass="carDetailTableViewController" customModule="全球平行进口" sceneMemberID="viewController">
+                <tableViewController id="YHC-ns-BdW" customClass="CarDetailTableViewController" customModule="全球平行进口" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PPB-zp-O2D">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1218,7 +1218,7 @@
         <!--Car Parameter Table View Controller-->
         <scene sceneID="ZdF-H0-AxN">
             <objects>
-                <tableViewController id="V1d-t1-cgb" customClass="carParameterTableViewController" customModule="全球平行进口" sceneMemberID="viewController">
+                <tableViewController id="V1d-t1-cgb" customClass="CarParameterTableViewController" customModule="全球平行进口" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="b5x-Ck-6OY">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

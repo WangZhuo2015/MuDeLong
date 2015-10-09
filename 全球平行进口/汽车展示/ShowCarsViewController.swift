@@ -161,7 +161,7 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let tableViewCell = brandTableView.dequeueReusableCellWithIdentifier(tableViewCellReuseIdentifier) as! brandSimpleInfoTableViewCell
+        let tableViewCell = brandTableView.dequeueReusableCellWithIdentifier(tableViewCellReuseIdentifier) as! BrandSimpleInfoTableViewCell
         tableViewCell.brandImage.image = UIImage(named: "test.jpg")
         tableViewCell.brandLabel.text = brandInfoArray[indexPath.row].carName
         return tableViewCell
@@ -172,7 +172,7 @@ class ShowCarsViewController: UIViewController,UITableViewDelegate,UITableViewDa
     // MARK: - Collection view data source
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let collectionViewCell = carsCollectionView.dequeueReusableCellWithReuseIdentifier(collectionViewCellReuseIdentifier,forIndexPath:indexPath ) as! carsCollectionViewCell
+        let collectionViewCell = carsCollectionView.dequeueReusableCellWithReuseIdentifier(collectionViewCellReuseIdentifier,forIndexPath:indexPath ) as! CarsCollectionViewCell
         collectionViewCell.carImage.image = UIImage(named: "test.jpg")
         collectionViewCell.carLabel.text = "第\(indexPath.section) -\(indexPath.row)个"
         return collectionViewCell

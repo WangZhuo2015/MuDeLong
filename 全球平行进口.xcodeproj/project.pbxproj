@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB2E84C01BC52D23005ACED0 /* carDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E84BF1BC52D23005ACED0 /* carDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CB2E84C01BC52D23005ACED0 /* CarDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E84BF1BC52D23005ACED0 /* CarDetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CB74F0F81BBACB9600D84E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0F61BBACB9600D84E1D /* Main.storyboard */; };
 		CB74F0FD1BBACB9600D84E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB74F0FB1BBACB9600D84E1D /* LaunchScreen.storyboard */; };
-		CB75E77C1BC4C4340072EE9F /* carsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB75E77B1BC4C4340072EE9F /* carsCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		CBB28A991BC6A70400FF9D42 /* carOfBrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB28A981BC6A70400FF9D42 /* carOfBrandTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		CBBA9EC81BC518BC00C46105 /* carsOfBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA9EC71BC518BC00C46105 /* carsOfBrandViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CBBB8A7D1BC7A87A005DC56D /* carParameterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A7C1BC7A87A005DC56D /* carParameterTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CBBB8A831BC7BBA7005DC56D /* moreImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A821BC7BBA7005DC56D /* moreImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CBBB8A851BC7BBFD005DC56D /* moreImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A841BC7BBFD005DC56D /* moreImageCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		CBBB8A871BC7CC60005DC56D /* testDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A861BC7CC60005DC56D /* testDriveViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CB75E77C1BC4C4340072EE9F /* CarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB75E77B1BC4C4340072EE9F /* CarsCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB28A991BC6A70400FF9D42 /* CarOfBrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB28A981BC6A70400FF9D42 /* CarOfBrandTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CBBA9EC81BC518BC00C46105 /* CarsOfBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA9EC71BC518BC00C46105 /* CarsOfBrandViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CBBB8A7D1BC7A87A005DC56D /* CarParameterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A7C1BC7A87A005DC56D /* CarParameterTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CBBB8A831BC7BBA7005DC56D /* MoreImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A821BC7BBA7005DC56D /* MoreImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CBBB8A851BC7BBFD005DC56D /* MoreImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A841BC7BBFD005DC56D /* MoreImageCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CBBB8A871BC7CC60005DC56D /* TestDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB8A861BC7CC60005DC56D /* TestDriveViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDEED0C1BBAE7DB00F07FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED081BBAE7DB00F07FA9 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		CBDEED0D1BBAE7DB00F07FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDEED091BBAE7DB00F07FA9 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		CBDEED0F1BBAE7DB00F07FA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEED0B1BBAE7DB00F07FA9 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -53,22 +53,22 @@
 		CBE1E33C1BC41D610098E9EF /* MenuItemsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE1E3361BC41D610098E9EF /* MenuItemsAnimator.swift */; settings = {ASSET_TAGS = (); }; };
 		CBE1E33D1BC41D610098E9EF /* MenuSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE1E3371BC41D610098E9EF /* MenuSegue.swift */; settings = {ASSET_TAGS = (); }; };
 		CBE1E33E1BC41D610098E9EF /* MenuTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE1E3381BC41D610098E9EF /* MenuTransitionAnimator.swift */; settings = {ASSET_TAGS = (); }; };
-		CBE1E3401BC423AF0098E9EF /* brandSimpleInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE1E33F1BC423AF0098E9EF /* brandSimpleInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		CBE1E3401BC423AF0098E9EF /* BrandSimpleInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE1E33F1BC423AF0098E9EF /* BrandSimpleInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		CBE1E3481BC4371A0098E9EF /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBE1E3471BC4371A0098E9EF /* test.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB2E84BF1BC52D23005ACED0 /* carDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carDetailTableViewController.swift; sourceTree = "<group>"; };
+		CB2E84BF1BC52D23005ACED0 /* CarDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailTableViewController.swift; sourceTree = "<group>"; };
 		CB74F0EF1BBACB9600D84E1D /* 全球平行进口.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "全球平行进口.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB74F0F71BBACB9600D84E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB74F0FC1BBACB9600D84E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CB75E77B1BC4C4340072EE9F /* carsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carsCollectionViewCell.swift; sourceTree = "<group>"; };
-		CBB28A981BC6A70400FF9D42 /* carOfBrandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carOfBrandTableViewCell.swift; sourceTree = "<group>"; };
-		CBBA9EC71BC518BC00C46105 /* carsOfBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carsOfBrandViewController.swift; sourceTree = "<group>"; };
-		CBBB8A7C1BC7A87A005DC56D /* carParameterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carParameterTableViewController.swift; sourceTree = "<group>"; };
-		CBBB8A821BC7BBA7005DC56D /* moreImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreImageViewController.swift; sourceTree = "<group>"; };
-		CBBB8A841BC7BBFD005DC56D /* moreImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		CBBB8A861BC7CC60005DC56D /* testDriveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testDriveViewController.swift; sourceTree = "<group>"; };
+		CB75E77B1BC4C4340072EE9F /* CarsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBB28A981BC6A70400FF9D42 /* CarOfBrandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarOfBrandTableViewCell.swift; sourceTree = "<group>"; };
+		CBBA9EC71BC518BC00C46105 /* CarsOfBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsOfBrandViewController.swift; sourceTree = "<group>"; };
+		CBBB8A7C1BC7A87A005DC56D /* CarParameterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarParameterTableViewController.swift; sourceTree = "<group>"; };
+		CBBB8A821BC7BBA7005DC56D /* MoreImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreImageViewController.swift; sourceTree = "<group>"; };
+		CBBB8A841BC7BBFD005DC56D /* MoreImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBBB8A861BC7CC60005DC56D /* TestDriveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDriveViewController.swift; sourceTree = "<group>"; };
 		CBDEED081BBAE7DB00F07FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBDEED091BBAE7DB00F07FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBDEED0B1BBAE7DB00F07FA9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		CBE1E3371BC41D610098E9EF /* MenuSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSegue.swift; sourceTree = "<group>"; };
 		CBE1E3381BC41D610098E9EF /* MenuTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionAnimator.swift; sourceTree = "<group>"; };
 		CBE1E3391BC41D610098E9EF /* SideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenu.h; sourceTree = "<group>"; };
-		CBE1E33F1BC423AF0098E9EF /* brandSimpleInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = brandSimpleInfoTableViewCell.swift; sourceTree = "<group>"; };
+		CBE1E33F1BC423AF0098E9EF /* BrandSimpleInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandSimpleInfoTableViewCell.swift; sourceTree = "<group>"; };
 		CBE1E3471BC4371A0098E9EF /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,8 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				CBDEED2A1BBAED5000F07FA9 /* ShowCarsViewController.swift */,
-				CBE1E33F1BC423AF0098E9EF /* brandSimpleInfoTableViewCell.swift */,
-				CB75E77B1BC4C4340072EE9F /* carsCollectionViewCell.swift */,
+				CBE1E33F1BC423AF0098E9EF /* BrandSimpleInfoTableViewCell.swift */,
+				CB75E77B1BC4C4340072EE9F /* CarsCollectionViewCell.swift */,
 			);
 			name = "一级页面";
 			sourceTree = "<group>";
@@ -182,11 +182,11 @@
 		CBBB8A7F1BC7B928005DC56D /* 车型列表 */ = {
 			isa = PBXGroup;
 			children = (
-				CB2E84BF1BC52D23005ACED0 /* carDetailTableViewController.swift */,
-				CBBB8A7C1BC7A87A005DC56D /* carParameterTableViewController.swift */,
-				CBBB8A821BC7BBA7005DC56D /* moreImageViewController.swift */,
-				CBBB8A841BC7BBFD005DC56D /* moreImageCollectionViewCell.swift */,
-				CBBB8A861BC7CC60005DC56D /* testDriveViewController.swift */,
+				CB2E84BF1BC52D23005ACED0 /* CarDetailTableViewController.swift */,
+				CBBB8A7C1BC7A87A005DC56D /* CarParameterTableViewController.swift */,
+				CBBB8A821BC7BBA7005DC56D /* MoreImageViewController.swift */,
+				CBBB8A841BC7BBFD005DC56D /* MoreImageCollectionViewCell.swift */,
+				CBBB8A861BC7CC60005DC56D /* TestDriveViewController.swift */,
 			);
 			name = "车型列表";
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 		CBBB8A801BC7B94F005DC56D /* 汽车列表 */ = {
 			isa = PBXGroup;
 			children = (
-				CBBA9EC71BC518BC00C46105 /* carsOfBrandViewController.swift */,
-				CBB28A981BC6A70400FF9D42 /* carOfBrandTableViewCell.swift */,
+				CBBA9EC71BC518BC00C46105 /* CarsOfBrandViewController.swift */,
+				CBB28A981BC6A70400FF9D42 /* CarOfBrandTableViewCell.swift */,
 			);
 			name = "汽车列表";
 			sourceTree = "<group>";
@@ -477,12 +477,12 @@
 				CBE1E3281BC41D5B0098E9EF /* MJRefreshBackGifFooter.m in Sources */,
 				CBE1E3251BC41D5B0098E9EF /* MJRefreshAutoGifFooter.m in Sources */,
 				CBE1E32C1BC41D5B0098E9EF /* MJRefreshNormalHeader.m in Sources */,
-				CBBB8A7D1BC7A87A005DC56D /* carParameterTableViewController.swift in Sources */,
-				CBBB8A831BC7BBA7005DC56D /* moreImageViewController.swift in Sources */,
+				CBBB8A7D1BC7A87A005DC56D /* CarParameterTableViewController.swift in Sources */,
+				CBBB8A831BC7BBA7005DC56D /* MoreImageViewController.swift in Sources */,
 				CBDEED2B1BBAED5000F07FA9 /* ShowCarsViewController.swift in Sources */,
 				CBE1E33B1BC41D610098E9EF /* Menu.swift in Sources */,
 				CBE1E33D1BC41D610098E9EF /* MenuSegue.swift in Sources */,
-				CBBB8A871BC7CC60005DC56D /* testDriveViewController.swift in Sources */,
+				CBBB8A871BC7CC60005DC56D /* TestDriveViewController.swift in Sources */,
 				CBE1E3271BC41D5B0098E9EF /* MJRefreshAutoStateFooter.m in Sources */,
 				CBE1E32F1BC41D5B0098E9EF /* MJRefreshConst.m in Sources */,
 				CBDEED2F1BBAED6A00F07FA9 /* MyInfoViewController.swift in Sources */,
@@ -492,25 +492,25 @@
 				CBE1E3231BC41D5B0098E9EF /* MJRefreshFooter.m in Sources */,
 				CBE1E3301BC41D5B0098E9EF /* UIScrollView+MJExtension.m in Sources */,
 				CBE1E33E1BC41D610098E9EF /* MenuTransitionAnimator.swift in Sources */,
-				CB75E77C1BC4C4340072EE9F /* carsCollectionViewCell.swift in Sources */,
+				CB75E77C1BC4C4340072EE9F /* CarsCollectionViewCell.swift in Sources */,
 				CBE1E3311BC41D5B0098E9EF /* UIScrollView+MJRefresh.m in Sources */,
 				CBE1E32D1BC41D5B0098E9EF /* MJRefreshStateHeader.m in Sources */,
 				CBDEED3A1BBAEFA900F07FA9 /* CarSimpleInfo.swift in Sources */,
 				CBE1E3221BC41D5B0098E9EF /* MJRefreshComponent.m in Sources */,
 				CBE1E32A1BC41D5B0098E9EF /* MJRefreshBackStateFooter.m in Sources */,
 				CBE1E33C1BC41D610098E9EF /* MenuItemsAnimator.swift in Sources */,
-				CBBA9EC81BC518BC00C46105 /* carsOfBrandViewController.swift in Sources */,
+				CBBA9EC81BC518BC00C46105 /* CarsOfBrandViewController.swift in Sources */,
 				CBE1E3241BC41D5B0098E9EF /* MJRefreshHeader.m in Sources */,
 				CBDEED311BBAED7A00F07FA9 /* AboutUsViewController.swift in Sources */,
-				CB2E84C01BC52D23005ACED0 /* carDetailTableViewController.swift in Sources */,
+				CB2E84C01BC52D23005ACED0 /* CarDetailTableViewController.swift in Sources */,
 				CBE1E3261BC41D5B0098E9EF /* MJRefreshAutoNormalFooter.m in Sources */,
-				CBBB8A851BC7BBFD005DC56D /* moreImageCollectionViewCell.swift in Sources */,
+				CBBB8A851BC7BBFD005DC56D /* MoreImageCollectionViewCell.swift in Sources */,
 				CBE1E3201BC41D5B0098E9EF /* MJRefreshAutoFooter.m in Sources */,
 				CBE1E3291BC41D5B0098E9EF /* MJRefreshBackNormalFooter.m in Sources */,
 				CBE1E3211BC41D5B0098E9EF /* MJRefreshBackFooter.m in Sources */,
 				CBDEED2D1BBAED5E00F07FA9 /* NewsViewController.swift in Sources */,
-				CBE1E3401BC423AF0098E9EF /* brandSimpleInfoTableViewCell.swift in Sources */,
-				CBB28A991BC6A70400FF9D42 /* carOfBrandTableViewCell.swift in Sources */,
+				CBE1E3401BC423AF0098E9EF /* BrandSimpleInfoTableViewCell.swift in Sources */,
+				CBB28A991BC6A70400FF9D42 /* CarOfBrandTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

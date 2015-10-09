@@ -1,5 +1,5 @@
 //
-//  carOfBrandTableViewCell.swift
+//  CarOfBrandTableViewCell.swift
 //  全球平行进口
 //
 //  Created by 王卓 on 15/10/8.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class carOfBrandTableViewCell: UITableViewCell {
+class CarOfBrandTableViewCell: UITableViewCell {
 
     @IBOutlet weak var carName: UILabel!
     @IBOutlet weak var carPrice: UILabel!
